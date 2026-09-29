@@ -7,9 +7,9 @@ end
 
 task.spawn(function()
     local codes = {
-        "ESKETIT"
-        "PRESIDENT"
-        "PVP"
+        "ESKETIT",
+        "PRESIDENT",
+        "PVP",
         "BUFF"
     }
 
