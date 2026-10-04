@@ -7,10 +7,10 @@ end
 
 task.spawn(function()
     local codes = {
-        "ESKETIT",
+        "ETERNAL",
         "PRESIDENT",
         "PVP",
-        "BUFF"
+        "MACRO!"
     }
 
     for _, code in ipairs(codes) do
