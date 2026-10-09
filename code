@@ -1,3 +1,4 @@
+
 local ReplicatedStorage = game:GetService("ReplicatedStorage")
 local MainEvent = ReplicatedStorage:WaitForChild("MainEvent")
 
@@ -5,14 +6,14 @@ local function sendCode(code)
     MainEvent:FireServer("EnterPromoCode", code)
 end
 
-task.spawn(function()
-    local codes = {
-        "ETERNAL",
-        "PRESIDENT",
-        "PVP",
-        "MACRO!"
-    }
+local codes = {
+    "ETERNAL",
+    "PRESIDENT",
+    "PVP",
+    "MACRO!"
+}
 
+task.spawn(function()
     for _, code in ipairs(codes) do
         sendCode(code)
         task.wait(1)
